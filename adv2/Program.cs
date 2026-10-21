@@ -128,6 +128,14 @@ namespace adv2
             //Covariance allows a generic interface to return a more derived type than originally specified, enabling assignments like IProducer<Dog> to IProducer<Animal>
             // out keyword enables this by restricting the type parameter to output positions only, such as method return types
             #endregion
+
+            #region q16
+            //What is contravariance? Explain the 'in' keyword.
+            //Contravariance allows a generic interface to accept a more general base type than originally specified, enabling assignments like assigning IProcessor<Animal> to IProcessor<Dog>
+            //in keyword enables this by restricting the type parameter strictly to input positions, such as method parameters.
+
+
+            #endregion
         }
     }
 }

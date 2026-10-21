@@ -64,17 +64,32 @@ namespace adv2
             // What is the interface constraint? Write an example.
             //  interface constraint requires that the type implements the specified interface (directly or indirectly).
 
-        //    public interface IPrintable
+            //    public interface IPrintable
+            //{
+            //    void Print();
+            //}
+
+            //public class Printer<T> where T : IPrintable
+            //{
+            //    public void PrintItem(T item)
+            //    {
+            //        item.Print();
+            //    }
+            //}
+            #endregion
+
+            #region q11
+            //What is the base class constraint? Write an example.
+            //base class constraint specifies that  type parameter must inherit from specified base class , it can be the base class itself or any class derived from itt
+
+        //    public class BaseClass
         //{
-        //    void Print();
+        //    // Base class members
         //}
 
-        //public class Printer<T> where T : IPrintable
+        //public class Service<T> where T : BaseClass
         //{
-        //    public void PrintItem(T item)
-        //    {
-        //        item.Print();
-        //    }
+        //    // T must inherit from BaseClass
         //}
             #endregion
     }

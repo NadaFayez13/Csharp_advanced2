@@ -4,14 +4,7 @@ namespace adv2
 {
     internal class Program
     {
-        public class Factory<T> where T : new()
-{
-    public T Create()
-    {
-        return new T();
-    }
-}
-        static void Main(string[] args)
+      static void Main(string[] args)
         {
             #region q4
             // What is a generic method? 
@@ -57,14 +50,32 @@ namespace adv2
             //What is the 'new()' constraint? Write an example.
             //the `new()` constraint ensures that the type has a public parameterless constructor, allowing us to create instances of `T` using `new T()`.
 
-        //    public class Factory<T> where T : new()
+            //    public class Factory<T> where T : new()
+            //{
+            //    public T Create()
+            //    {
+            //        return new T();
+            //    }
+            //}
+
+            #endregion
+
+            #region q10
+            // What is the interface constraint? Write an example.
+            //  interface constraint requires that the type implements the specified interface (directly or indirectly).
+
+        //    public interface IPrintable
         //{
-        //    public T Create()
-        //    {
-        //        return new T();
-        //    }
+        //    void Print();
         //}
 
+        //public class Printer<T> where T : IPrintable
+        //{
+        //    public void PrintItem(T item)
+        //    {
+        //        item.Print();
+        //    }
+        //}
             #endregion
     }
     }

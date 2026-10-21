@@ -15,5 +15,11 @@ namespace adv2
         }
 
 
+        //Write a generic method FindMax<T> that finds maximum value
+        public static T Max<T>(T a, T b) where T : IComparable<T>
+        {
+            return a.CompareTo(b) > 0 ? a : b;
+        }
+
     }
 }

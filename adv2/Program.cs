@@ -122,6 +122,12 @@ namespace adv2
             //What does the 'default' keyword do in generics?
             // it returns the default value of a type parameter (T), which is null for reference types and zero for value types.
             #endregion
+
+            #region q15
+            //What is covariance? Explain the 'out' keyword.
+            //Covariance allows a generic interface to return a more derived type than originally specified, enabling assignments like IProducer<Dog> to IProducer<Animal>
+            // out keyword enables this by restricting the type parameter to output positions only, such as method return types
+            #endregion
         }
     }
 }

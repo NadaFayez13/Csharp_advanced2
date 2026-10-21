@@ -15,10 +15,14 @@
             #endregion
 
             #region q5
-            int maxInt = methods.Max(11, 13);
-            Console.WriteLine($"Max Int: {maxInt}");
+            //int maxInt = methods.Max(11, 13);
+            //Console.WriteLine($"Max Int: {maxInt}");
             #endregion
 
+            #region q6
+            // What is a generic interface?
+            //generic interface uses type parameters like <T>, allowing classes to work with different data types while keeping the code type-safe and reusable.
+            #endregion
         }
     }
 }

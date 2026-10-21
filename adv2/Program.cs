@@ -136,6 +136,15 @@ namespace adv2
 
 
             #endregion
+
+            #region q17
+            //What is the difference between covariance and contravariance?
+            //Covariance (out) lets you pass a subtype where a base type is expected, like assigning IProducer<Dog> to IProducer<Animal>.
+            //It only works for returning data from methods.
+            
+            //Contravariance (in) goes the other way around, letting you pass a base type where a subtype is expected, like assigning IProcessor<Animal> to IProcessor<Dog>.
+            //It’s strictly for taking in data through method parameters.
+            #endregion
         }
     }
 }

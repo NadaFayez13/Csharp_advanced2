@@ -152,7 +152,10 @@ namespace adv2
             //This means each type variation maintains its own independent static state at runtime.
             #endregion
 
-          
+            #region q19
+            // How can you inherit from a generic class?
+            //we can inherit from a generic class either by keeping the derived class generic and passing the same type parameter (like Derived<T> : Base<T>), or by making the derived class non-generic and specifying a concrete type for the base class (User : Entity<int>).
+            #endregion
         }
     }
 }

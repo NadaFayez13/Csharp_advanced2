@@ -1,4 +1,6 @@
-﻿namespace adv2
+﻿using System.Data;
+
+namespace adv2
 {
     internal class Program
     {
@@ -23,6 +25,19 @@
             // What is a generic interface?
             //generic interface uses type parameters like <T>, allowing classes to work with different data types while keeping the code type-safe and reusable.
             #endregion
+
+            #region q7
+            //What is the 'struct' constraint? Write an example.
+            //It limits the type parameter to value types like `int`, `bool`, `double`, and `struct`. Nullable value types are allowed, but reference types are not.
+
+            //    public class Container<T> where T : struct
+            //{
+            //    public T Value { get; set; }
+            //}
+
+            #endregion
+
+            
         }
     }
 }

@@ -99,24 +99,29 @@ namespace adv2
             //The order matters: specify the base class first, followed by any interfaces, and place `new()` last if needed.
 
 
-        //    public interface IAuditable
-        //{
-        //    void Audit();
-        //}
+            //    public interface IAuditable
+            //{
+            //    void Audit();
+            //}
 
-        //public class BaseEntity
-        //{
-        //    public int Id { get; set; }
-        //}
+            //public class BaseEntity
+            //{
+            //    public int Id { get; set; }
+            //}
 
-        //public class Repository<T> where T : BaseEntity, IAuditable, new()
-        //{
-        //    public T Create()
-        //    {
-        //        return new T();
-        //    }
-        //}
+            //public class Repository<T> where T : BaseEntity, IAuditable, new()
+            //{
+            //    public T Create()
+            //    {
+            //        return new T();
+            //    }
+            //}
             #endregion
-    }
+
+            #region q13
+            //What does the 'default' keyword do in generics?
+            // it returns the default value of a type parameter (T), which is null for reference types and zero for value types.
+            #endregion
+        }
     }
 }

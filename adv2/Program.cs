@@ -29,7 +29,6 @@ namespace adv2
             #region q7
             //What is the 'struct' constraint? Write an example.
             //It limits the type parameter to value types like `int`, `bool`, `double`, and `struct`. Nullable value types are allowed, but reference types are not.
-
             //    public class Container<T> where T : struct
             //{
             //    public T Value { get; set; }
@@ -37,7 +36,15 @@ namespace adv2
 
             #endregion
 
-            
-        }
+            #region q8
+            //What is the 'class' constraint? Write an example.
+            //It limits the type parameter to reference types, such as classes, interfaces, and arrays and Value types like structs and enums are not allowed
+
+        //    public class Repository<T> where T : class
+        //{
+        //    public T Item { get; set; }
+        //}
+            #endregion
+    }
     }
 }

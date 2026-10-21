@@ -4,6 +4,13 @@ namespace adv2
 {
     internal class Program
     {
+        public class Factory<T> where T : new()
+{
+    public T Create()
+    {
+        return new T();
+    }
+}
         static void Main(string[] args)
         {
             #region q4
@@ -40,10 +47,24 @@ namespace adv2
             //What is the 'class' constraint? Write an example.
             //It limits the type parameter to reference types, such as classes, interfaces, and arrays and Value types like structs and enums are not allowed
 
-        //    public class Repository<T> where T : class
+            //    public class Repository<T> where T : class
+            //{
+            //    public T Item { get; set; }
+            //}
+            #endregion
+
+            #region q9
+            //What is the 'new()' constraint? Write an example.
+            //the `new()` constraint ensures that the type has a public parameterless constructor, allowing us to create instances of `T` using `new T()`.
+
+        //    public class Factory<T> where T : new()
         //{
-        //    public T Item { get; set; }
+        //    public T Create()
+        //    {
+        //        return new T();
+        //    }
         //}
+
             #endregion
     }
     }

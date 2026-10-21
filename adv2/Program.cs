@@ -82,14 +82,39 @@ namespace adv2
             //What is the base class constraint? Write an example.
             //base class constraint specifies that  type parameter must inherit from specified base class , it can be the base class itself or any class derived from itt
 
-        //    public class BaseClass
+            //    public class BaseClass
+            //{
+            //    // Base class members
+            //}
+
+            //public class Service<T> where T : BaseClass
+            //{
+            //    // T must inherit from BaseClass
+            //}
+            #endregion
+
+            #region q12
+            //How do you apply multiple constraints? Write an example. 
+            //You can apply multiple constraints to a type parameter by separating them with commas after `where`.
+            //The order matters: specify the base class first, followed by any interfaces, and place `new()` last if needed.
+
+
+        //    public interface IAuditable
         //{
-        //    // Base class members
+        //    void Audit();
         //}
 
-        //public class Service<T> where T : BaseClass
+        //public class BaseEntity
         //{
-        //    // T must inherit from BaseClass
+        //    public int Id { get; set; }
+        //}
+
+        //public class Repository<T> where T : BaseEntity, IAuditable, new()
+        //{
+        //    public T Create()
+        //    {
+        //        return new T();
+        //    }
         //}
             #endregion
     }
